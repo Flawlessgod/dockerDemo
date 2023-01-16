@@ -1,3 +1,4 @@
 FROM python:latest
+#ADD main.py .
 EXPOSE 8080
-CMD ["/bin/bash"]
+#CMD ["python", "./main.py"]
