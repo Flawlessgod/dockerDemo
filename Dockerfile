@@ -9,7 +9,7 @@ ARG NODE_VERSION=19-alpine3.16
 FROM node:${NODE_VERSION}
 EXPOSE 8080
 RUN apk update && apk add bash
-WORKDIR /usr/src/app/pages
+WORKDIR E:\Projects\dockerDemo  
 WORKDIR ..
 COPY *.json .
 COPY server.js .
