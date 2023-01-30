@@ -15,26 +15,6 @@ services:
     volumes:
       - /Users/Christophe/353/A2:/usr/src/app
     ports:
-      - "80:8080"
+      - "81:8080"
     stdin_open: true
     tty: true
-# version: "3.9"
-# services:
-#  node1:
-#    container_name: node1
-#    build: .
-#    volumes:
-#    - /Users/Christophe/353/A2:/usr/src/app
-#    ports:
-#    - "80:8080"
-#    stdin_open: true
-#    tty: true
-# # node2:
-# #   build: .
-# #   container_name: node2
-# #   volumes:
-# #   - /Users/Christophe/353/A2:/usr/src/app
-# #   ports:
-# #   - "81:8080"
-# #   stdin_open: true
-# #   tty: true
