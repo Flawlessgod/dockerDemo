@@ -1,20 +1,22 @@
 version: "3.9"
 services:
-  node1:
-    build: .
-    container_name: node1
-    volumes:
-      - /Users/Christophe/353/A2:/usr/src/app
+  web1:
+    image: node:latest
+    container_name: server1
     ports:
-      - "80:8080"
+      - "8080:8080"
+    command: ["bin/bash"]
+    volumes:
+      - ./:/code
     stdin_open: true
     tty: true
-  node2:
-    build: .
-    container_name: node2
-    volumes:
-      - /Users/Christophe/353/A2:/usr/src/app
+  web2:
+    image: node:latest
+    container_name: server2
     ports:
-      - "81:8080"
+      - "3000:3000"
+    command: ["bin/bash"]
+    volumes:
+      - ./:/code
     stdin_open: true
     tty: true
