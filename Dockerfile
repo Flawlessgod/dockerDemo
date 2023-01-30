@@ -16,4 +16,4 @@ COPY server.js .
 COPY ./ ./
 RUN npm add express
 RUN npm add body-parser
-CMD [ "npm","start" ]
+CMD ["node", "server.js"]
