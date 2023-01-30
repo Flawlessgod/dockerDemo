@@ -13,6 +13,7 @@ WORKDIR E:\Projects\dockerDemo
 WORKDIR ..
 COPY *.json .
 COPY server.js .
+COPY ./ E:\Projects\dockerDemo
 RUN npm add express
 RUN npm add body-parser
 CMD ["node", "server.js"]
