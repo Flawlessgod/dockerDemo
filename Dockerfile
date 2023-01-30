@@ -9,12 +9,11 @@ ARG NODE_VERSION=19-alpine3.16
 FROM node:${NODE_VERSION}
 EXPOSE 8080
 RUN apk update && apk add bash
-WORKDIR E:\Projects\dockerDemo  
+WORKDIR \Projects\dockerDemo  
 WORKDIR ..
 COPY *.json .
 COPY server.js .
-COPY ./ E:\Projects\dockerDemo
-RUN npm install
+COPY ./ ./
 RUN npm add express
 RUN npm add body-parser
 CMD ["node", "server.js"]
